@@ -47,16 +47,17 @@ h3 {
 
 #masthead {
 	background: #fff;
-	margin: 0 0 30px;
+	margin: 0px;
 	z-index: 99;
 	color: #fff;
-	overflow: auto;
+	
 	border-bottom: 2px solid #ccc;
 	position: fixed;
 	width: 100%;
+	
 }
 #logo {
-	width: 250px;
+	width: 400px;
 	height: 90px;
 	background: #4aaaa5;
 	float: left;
@@ -67,10 +68,11 @@ h3 {
 	font-weight: 700;
 	font-size: 30px;
 	text-decoration: none;
+
 }
 nav {
 	float: right;
-	margin-top: 25px;
+	margin: 25px 30px 0px 0px;
 }
 nav a {
 	color: #999;
@@ -213,3 +215,99 @@ input[type=submit] {
 	padding: 10px 30px;
 	cursor: pointer;
 }
+
+@media screen and (max-width: 980px) {
+	.main-section{
+	 	width: 60%;
+	    float: none;
+	    margin: 0px 15px 20px 20px;
+	    padding-left: 5%;
+	    padding-right: 5%;
+	    display: inline-block;
+ 	}
+ 	.sidebar{
+	    float: right;
+	    margin: 0 auto;
+	    width: 100%;
+	    margin-top: 10px;
+	    margin-bottom: 20px;
+	    padding-left: 5%;
+	    padding-right: 2%;
+	    display: inline-block;
+	}
+	
+
+}
+@media screen and (max-width: 768px) {
+ 	.main-section{
+ 		width: 90%;
+		float: none;
+		margin: 0 auto;
+		padding-left: 5%;
+		padding-right: 5%
+ 	}
+ 	.sidebar{
+ 		float: none;
+	    margin: 0 auto;
+	    max-width: 90%;
+	    margin-top: 10px;
+	    margin-bottom: 20px;
+	    padding-left: 5%;
+	    padding-right: 5%;
+	}
+	#masthead{
+		display: block;
+		
+	}
+	#logo{
+		max-width: 50%;
+		line-height: 40px;
+		padding: 15px; 
+
+	}
+    }
+@media screen and (max-width: 640px) {
+   
+    header {
+		width: 100%;
+		position: static;
+		float: none;
+		
+	}
+	#masthead{
+		width: 100%;
+		
+		display: block;
+		margin-bottom: 20px;
+
+	}
+	#logo{
+		display: block;
+	    max-width: 100%;
+	    width: 100%;
+	    margin-bottom: 20px;
+	}
+	#nav{
+		float: none;
+		width: 100%;	
+		position: static;
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+		padding-top: 3%;
+		padding-bottom: 3%;
+		
+	}
+	.main-section{
+		margin: 60px 20px 20px 40px;
+		width: 85%;
+
+	}
+	.sidebar{
+		width: 85%;
+		margin: 10px 20px 20px 40px;
+		float: none;
+		display: inline-block;
+	}
+	
+    }
